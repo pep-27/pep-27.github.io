@@ -175,7 +175,9 @@ LLM 分类有误差，用户必须能查逻辑、看置信度、打标反馈。
 
     * `growth_4q`：滚动4季增长率 = `(curr_4q - prev_4q) / NULLIF(prev_4q,0)`
     * **集中度（HHI）**：衡量某学院在各SDG的“偏科”程度
+      
       ![HHI Formula](https://raw.githubusercontent.com/pep-27/pep-27.github.io/main/HHI_Formula.png)
+      
       *SQL 片段*：对各SDG占比求平方后汇总。
     * **经费产出效率**：`outputs_per_$ = outputs / (grant_$ / 1e6)`
   * **影响（Impact）**：转化与外溢
